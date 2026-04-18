@@ -1,0 +1,15 @@
+/* Additional AppCard Styles */
+
+.glass-strong.hover-lift:hover .absolute-glow {
+  opacity: 0.1 !important;
+}
+
+/* Ensure buttons don't trigger the card's inner glow when hovered specifically */
+.app-card-btn {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+}
