@@ -33,7 +33,7 @@ app.get('/api/github/repos', async (req, res) => {
     const { data: repos } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=20`, { headers });
     
     const processedRepos = await Promise.all(
-      repos.filter(repo => !repo.fork).map(async (repo) => {
+      repos.filter(repo => !repo.fork && repo.name !== 'My-App-Gallery').map(async (repo) => {
         let languages = [];
         try {
           // Fetch languages for tech stack
