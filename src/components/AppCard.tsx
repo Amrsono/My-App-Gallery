@@ -4,7 +4,6 @@ export interface RepoData {
   id: string;
   name: string;
   description: string;
-  url: string;
   homepage: string;
   languages: string[];
   stars: number;
@@ -42,7 +41,6 @@ const AppCard = ({ app }: AppCardProps) => {
       </div>
       
       <div style={{ position: 'relative', zIndex: 10, marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-        <a href={app.url} target="_blank" rel="noopener noreferrer" className="glass hover-lift" style={{ padding: '0.75rem 1.5rem', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, textDecoration: 'none', color: 'white' }}>View Code</a>
         {app.homepage && <a href={app.homepage} target="_blank" rel="noopener noreferrer" className="gradient-modern neon-glow-purple hover-lift" style={{ padding: '0.75rem 1.5rem', borderRadius: '9999px', fontSize: '0.875rem', fontWeight: 600, textDecoration: 'none' }}>Live App</a>}
       </div>
     </div>

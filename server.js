@@ -47,7 +47,6 @@ app.get('/api/github/repos', async (req, res) => {
           id: repo.id.toString(),
           name: repo.name,
           description: repo.description || 'A software project developed by Amrsono.',
-          url: repo.html_url,
           homepage: repo.homepage,
           stars: repo.stargazers_count,
           languages: languages.length > 0 ? languages : ['Unknown'],
