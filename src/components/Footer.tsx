@@ -8,9 +8,7 @@ const Footer = () => {
         <h2 className="title text-gradient neon-text-blue footer-title">LET'S CONNECT</h2>
         
         <div className="footer-links">
-          <a href="https://github.com/Amrsono" target="_blank" rel="noopener noreferrer" className="footer-btn glass hover-lift hover-neon-glow-blue">
-            <span className="icon">👾</span> GitHub
-          </a>
+
           
           <a href="https://www.linkedin.com/in/amr-sono/" target="_blank" rel="noopener noreferrer" className="footer-btn glass hover-lift hover-neon-glow-purple">
             <span className="icon">👔</span> LinkedIn
